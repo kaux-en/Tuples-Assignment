@@ -1,0 +1,20 @@
+#Task 1: Library System Enhancement
+
+library = [("1984", "George Orwell"), ("Brave New World", "Aldous Huxley")]
+
+book = input("Enter book title: ").lower()
+author = input("Enter author name: ").lower()
+
+def add_books(book, author):
+    for books in library:
+        new_tuple = (book, author)
+        if isinstance(books, (list, tuple)):
+            library.append(new_tuple)
+            print(library)
+            break
+
+add_books(book, author)
+
+
+
+

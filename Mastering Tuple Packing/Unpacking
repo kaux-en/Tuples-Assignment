@@ -1,0 +1,13 @@
+
+#Task 1: Customer Order Processing
+
+orders = [("Alice", "Laptop", 1), ("Bob", "Camera", 2)]
+
+def display_orders():
+    for order in orders:
+        customer, product = order[0], order[1]
+        quantity = int(order[2])
+        print(f"Customer: {customer}, Ordered {quantity} {product}.")
+
+display_orders()
+        

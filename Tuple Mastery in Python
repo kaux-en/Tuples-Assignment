@@ -1,0 +1,17 @@
+
+
+#Task 1: Formatting Flight itineraries
+
+itineraries = [("Alice", "New York", "London"), ("Bob", "Tokyo", "San Francisco")]
+counter = 0
+
+def itinerary_list(itineraries):
+    for itinerary in itineraries:
+        traveler, city = itinerary[0], itinerary[1:]
+        global counter
+        counter += 1
+        itin_num = counter
+        print(f"Itinerary {itin_num}: {traveler} - From {city[0]} to {city[1]}")
+
+
+itinerary_list(itineraries)
